@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag.Tab_Home">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderinfo_red"
+        android:backgroundTint="#FF5927"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/right_arrow"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Details"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="30sp"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tabmenu_bg"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <pl.looksoft.shadowlib.ShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:shadowLayoutBlur="10dp"
+                app:shadowLayoutColor="#C9BDBCBB"
+                app:shadowLayoutDx="5dp"
+                app:shadowLayoutDy="10dp"
+                app:shadowLayoutSpread="0dp">
+
+                <com.henley.shadowlayout.ShadowLayout
+                    android:id="@+id/shadow_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="480dp"
+                    android:elevation="10dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:layout_marginTop="30dp"
+                    app:shadowColor="@color/black"
+                    app:cornerRadius="30dp"
+                    app:shadowMargin="10dp"
+                    app:shadowRadius="100dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="4dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="2dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/home_tab_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Dominos Pizza"
+                                        android:textStyle="bold"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="20sp"/>
+
+                                </LinearLayout>
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/rating_card_res"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="32dp"
+                                    android:layout_height="22dp"
+                                    app:cardBackgroundColor="@android:color/holo_green_dark"
+                                    app:cardCornerRadius="2dp"
+                                    android:layout_marginRight="25dp">
+
+                                    <TextView
+                                        android:id="@+id/rating_card_text_res"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="22dp"
+                                        android:layout_gravity="center"
+                                        android:text="4.5"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/home_tab_location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kaloor, Kochi"
+                                android:textSize="14sp"/>
+                            <LinearLayout
+                                android:visibility="visible"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <RatingBar
+                                    android:id="@+id/home_tab_ratingbar"
+                                    style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:theme="@style/MyRatingBar"/>
+
+                                <TextView
+                                    android:id="@+id/home_tab_rating_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.5 FlipStars"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:textSize="12sp"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="cost:"
+                                    android:textSize="13sp"
+                                    android:textAllCaps="true"
+                                    android:textColor="@android:color/black"/>
+                                <TextView
+                                    android:id="@+id/home_tab_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:textSize="13sp"
+                                    android:tooltipText="Rs.1600 for two"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp">
+                                <TextView
+                                    android:id="@+id/home_tab_open_status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13sp"
+                                    android:text="Open"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/brightGreen"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=":-"
+                                    android:textSize="13sp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"/>
+                                <TextView
+                                    android:id="@+id/home_tab_hours"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13sp"
+                                    android:textColor="@android:color/black"
+                                    android:text="12PM to 12AM"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/call_button_resact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="37dp"
+                                android:background="@drawable/borderbutton_black"
+                                android:orientation="horizontal">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="36dp"
+                                    android:layout_height="match_parent"
+                                    app:cardBackgroundColor="@android:color/holo_red_dark"
+                                      app:cardCornerRadius="4dp">
+                                    <ImageView
+                                        android:layout_gravity="center"
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp"
+                                        android:src="@drawable/ic_call_white_24dp"/>
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="CALL"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:textColor="@android:color/holo_red_dark"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/direction_button_resact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="37dp"
+                                android:layout_marginLeft="16dp"
+                                android:gravity="center"
+                                android:background="@drawable/borderbutton_black"
+                                android:orientation="horizontal">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="36dp"
+                                    android:layout_height="match_parent"
+                                    app:cardBackgroundColor="@android:color/holo_red_dark"
+                                    app:cardCornerRadius="4dp">
+                                    <ImageView
+                                        android:layout_gravity="center"
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:src="@drawable/ic_directions_white_24dp"/>
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="14dp"
+                                    android:layout_marginRight="14dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="GET DIRECTIONS"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:textColor="@android:color/holo_red_dark"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="55dp"
+                            android:text="For Booking table?"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/white">
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginTop="10dp"
+                                app:cardCornerRadius="5dp"
+                                app:cardBackgroundColor="@android:color/holo_red_dark">
+                                <LinearLayout
+                                    android:id="@+id/call_to_action_button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:src="@drawable/ic_restaurant_white_24dp"
+                                        android:layout_marginRight="12dp"/>
+                                    <TextView
+                                        android:id="@+id/call_to_action_button_textview"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textStyle="bold"
+                                        android:textSize="18sp"
+                                        android:text="Book a Table"
+                                        android:textAllCaps="true"
+                                        android:textColor="@android:color/white"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.henley.shadowlayout.ShadowLayout>
+    </pl.looksoft.shadowlib.ShadowLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

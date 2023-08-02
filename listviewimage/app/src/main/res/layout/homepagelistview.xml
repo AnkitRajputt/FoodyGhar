@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="160dp"
+            android:layout_height="165dp"
+            android:src="@color/cardview_dark_background" />
+
+
+        <TextView
+            android:id="@+id/htlname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="160dp"
+            android:padding="10dp"
+            android:text="hotelname"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/htldesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="160dp"
+            android:text="hoteldesc"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+
+
+            />
+    </FrameLayout>
+</LinearLayout>

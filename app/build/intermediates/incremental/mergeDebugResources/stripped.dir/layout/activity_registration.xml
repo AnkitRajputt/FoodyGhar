@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#74BDB9B8"
+    tools:context=".Registration">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_contributors" />
+
+            <pl.looksoft.shadowlib.ShadowLayout
+                android:layout_width="370dp"
+                android:layout_height="642dp"
+                android:layout_gravity="center"
+                app:shadowLayoutBlur="3dp"
+                app:shadowLayoutColor="#C9BDBCBB"
+                app:shadowLayoutDx="5dp"
+                app:shadowLayoutDy="10dp"
+                app:shadowLayoutSpread="0dp">
+
+                <com.henley.shadowlayout.ShadowLayout
+                    android:id="@+id/shadow_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="10dp"
+                    app:cornerRadius="30dp"
+                    app:shadowColor="@color/black"
+                    app:shadowMargin="10dp"
+                    app:shadowRadius="100dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_RegFName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:helperText="*Mandatory"
+                            android:layout_marginTop="8dp"
+                            app:helperTextTextColor="@android:color/holo_red_dark"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            app:startIconDrawable="@drawable/ic_user_person_24"
+                            app:endIconMode="clear_text"
+                            app:startIconTint="@color/black">
+
+                            <EditText
+                                android:id="@+id/txtfname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:textStyle="bold|normal"
+                                android:hint="Enter First Name"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:textColor="@color/black"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_RegLName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:helperText="*Mandatory"
+                            android:layout_marginTop="8dp"
+                            app:helperTextTextColor="@android:color/holo_red_dark"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            app:startIconDrawable="@drawable/ic_user_person_24"
+                            app:endIconMode="clear_text"
+                            app:startIconTint="@color/black">
+
+                            <EditText
+                                android:id="@+id/txtlname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:textStyle="bold|normal"
+                                android:hint="Enter Last Name"
+                                android:inputType="textPersonName"
+                                android:padding="10dp"
+                                android:imeOptions="actionNext"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_RegMob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            app:prefixText="+91"
+                            app:helperText="*Mandatory"
+                            app:helperTextTextColor="@android:color/holo_red_dark"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="10"
+                            app:endIconMode="clear_text"
+                            app:startIconDrawable="@drawable/contact"
+                            app:startIconTint="@color/black">
+
+                            <EditText
+                                android:id="@+id/contact"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold|normal"
+                                android:maxLength="10"
+                                android:ems="10"
+                                android:imeOptions="actionNext"
+                                android:hint="Enter Contact No"
+                                android:inputType="number"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_RegEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:helperText="*Mandatory"
+                            app:helperTextTextColor="@android:color/holo_red_dark"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            app:startIconDrawable="@drawable/ic_email_24"
+                            app:endIconMode="clear_text"
+                            app:startIconTint="@color/black">
+
+                            <EditText
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:textStyle="bold|normal"
+                                android:hint="Enter Email id"
+                                android:inputType="textEmailAddress"
+                                android:imeOptions="actionNext"
+                                android:padding="10dp"
+                                android:textColor="@color/black"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_RegPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:helperText="*Mandatory"
+                            app:helperTextTextColor="@android:color/holo_red_dark"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="16"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            app:startIconDrawable="@drawable/lock"
+                            app:passwordToggleEnabled="true"
+                            app:startIconTint="@color/black">
+
+                            <EditText
+                                android:id="@+id/password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:textStyle="bold|normal"
+                                android:hint="Enter Password"
+                                android:maxLength="16"
+                                android:inputType="textPassword"
+                                android:padding="10dp"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <pl.looksoft.shadowlib.ShadowLayout
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:shadowLayoutBlur="1dp"
+                            app:shadowLayoutColor="#6A8E9191"
+                            app:shadowLayoutDx="0dp"
+                            app:shadowLayoutDy="8dp"
+                            app:shadowLayoutSpread="0dp">
+
+
+                            <Button
+                                android:id="@+id/btnsubmit"
+                                android:layout_width="140dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/shapelogin"
+                                android:padding="5dp"
+                                android:text="REGISTER"
+                                android:textColor="#E8D7C5"
+                                android:textSize="15dp" />
+
+                        </pl.looksoft.shadowlib.ShadowLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:gravity="center"
+                            android:hint="Or"
+                            android:textColorHint="@color/signupColor"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-black"
+                            android:gravity="center"
+                            android:hint="Already have an account ?"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/retlogin"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:backgroundTint="@color/black"
+                            android:gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:text="Log in"
+                            android:background="@drawable/borderbutton_green"
+                            android:textColor="@color/signupColor"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+
+
+
+
+                    </LinearLayout>
+                </com.henley.shadowlayout.ShadowLayout>
+            </pl.looksoft.shadowlib.ShadowLayout>
+        </LinearLayout>
+    </ScrollView>
+</ScrollView>

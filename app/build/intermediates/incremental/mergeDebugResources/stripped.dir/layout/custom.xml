@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/app_name"
+            android:padding="2dp" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/img_avatar"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_name"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/img_avatar"
+            android:background="@color/tabsbg"
+            android:drawablePadding="2dp" />
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/img_avatar"
+            android:lineSpacingExtra="5dp"
+            android:text="address"
+            android:textColor="@color/black"
+            app:colorClickableText="@color/error_red_info"
+            app:trimCollapsedText="@string/read_more"
+            app:trimExpandedText="@string/read_less"
+            app:trimLength="61"
+            app:trimMode="trimModeLength">
+
+        </com.borjabravo.readmoretextview.ReadMoreTextView>
+     <!--   <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+
+            android:drawablePadding="2dp"
+            android:text="address" />
+-->
+       <!-- <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/img_avatar"
+            android:drawablePadding="2dp"
+            android:text="time" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="115dp"
+            android:layout_below="@id/tv_address">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:text="Open"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="13sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@android:color/black"
+                android:text="12PM to 12AM"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

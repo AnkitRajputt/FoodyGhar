@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".TandC">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/info"/>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Info"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/img1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt1"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Name: Such as first or last name\nEmail Address: Including but not limited to a hashed email address\nPhone Number: Including but not limited to a hashed phone number\nPhysical Address: Such as home address, physical address, or mailing address\nOther User Contact Info: Any other information that can be used to contact the user outside the app"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="225dp"
+                android:background="@color/black" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="230dp"
+                android:src="@drawable/health"/>
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Health And Fitness"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="230dp"
+                android:layout_toRightOf="@id/img1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt4"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="270dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Health: Health and medical data, including but not limited to data from the Clinical Health Records API, HealthKit API, MovementDisorderAPIs, or health-related human subject research or any other user provided health or medical data\nFitness: Fitness and exercise data, including but not limited to the Motion and Fitness API"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="405dp"
+                android:background="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="410dp"
+                android:src="@drawable/financial"/>
+
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Financial Info"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="410dp"
+                android:layout_toRightOf="@id/img1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt6"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="450dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Payment Info: Such as form of payment, payment card number, or bank account number. If your app uses a payment service, the payment information is entered outside your app, and you as the developer never have access to the payment information, it is not collected and does not need to be disclosed."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="567dp"
+                android:background="@color/black" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="570dp"
+                android:src="@drawable/location"/>
+
+            <TextView
+                android:id="@+id/txt8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="570dp"
+                android:layout_toRightOf="@id/img1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt8"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="610dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Precise Location: Information that describes the location of a user or device with the same or greater resolution as a latitude and longitude with three or more decimal places \nCoarse Location: Information that describes the location of a user or device with lower resolution than a latitude and longitude with three or more decimal places, such as Approximate Location Services"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="785dp"
+                android:background="@color/black" />
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="790dp"
+                android:src="@drawable/sensitive"/>
+
+            <TextView
+                android:id="@+id/txt10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sensitive Info"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="790dp"
+                android:layout_toRightOf="@id/img1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt10"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="830dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Sensitive Info: Such as racial or ethnic data, sexual orientation, pregnancy or childbirth information, disability, religious or philosophical beliefs, trade union membership, political opinion, genetic information, or biometric data"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="925dp"
+                android:background="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="930dp"
+                android:src="@drawable/contact"/>
+
+            <TextView
+                android:id="@+id/txt12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contacts"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="930dp"
+                android:layout_toRightOf="@id/img1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt12"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="965dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Contacts: Such as a list of contacts in the user’s phone, address book, or social graph"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1020dp"
+                android:background="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="1022dp"
+                android:src="@drawable/content"/>
+
+            <TextView
+                android:id="@+id/txt14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Content"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1020dp"
+                android:layout_toRightOf="@id/img1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt14"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1060dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Emails or Text Messages: Including subject line, sender, recipients, and contents of the email or message\nPhotos: The user’s photos\nCustomer Support: Data generated by the user during a customer support request"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1182dp"
+                android:background="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="1185dp"
+                android:src="@drawable/searchhistory"/>
+
+            <TextView
+                android:id="@+id/txt16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search History"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1185dp"
+                android:layout_toRightOf="@id/img1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt16"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1220dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Search History: Information about searches performed in the app"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1280dp"
+                android:background="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/img9"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="1280dp"
+                android:src="@drawable/identifiers"/>
+
+            <TextView
+                android:id="@+id/txt18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Identifiers"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1280dp"
+                android:layout_toRightOf="@id/img1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt18"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1320dp"
+                    android:layout_marginStart="10dp"
+                    android:text="User ID: Such as screen name, handle, account ID, assigned user ID, customer number, or other user- or account-level ID that can be used to identify a particular user or account"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1410dp"
+                android:background="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/img10"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="1410dp"
+                android:src="@drawable/usagedata"/>
+
+            <TextView
+                android:id="@+id/txt20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usage Data"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1410dp"
+                android:layout_toRightOf="@id/img1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt20"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1450dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Product Interaction: Such as app launches, taps, clicks, scrolling information, music listening data, video views, saved place in a game, video, or song, or other information about how the user interacts with the app\nAdvertising Data: Such as information about the advertisements the user has seen"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1590dp"
+                android:background="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/img11"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="1590dp"
+                android:src="@drawable/diagnostics"/>
+
+            <TextView
+                android:id="@+id/txt22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diagnostics"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1590dp"
+                android:layout_toRightOf="@id/img1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt22"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1630dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Crash Data: Such as crash logs\nPerformance Data: Such as launch time, hang rate, or energy use\nOther Diagnostic Data: Any other data collected for the purposes of measuring technical diagnostics related to the app"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txt2"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1750dp"
+                android:focusable="true">
+                <CheckBox
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:buttonTint="@color/signupColor"/>
+                <TextView
+                    android:id="@+id/txt25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I have read and agreed to the terms and conditions "
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/img1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btndecline"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1810dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/shapelogin"
+                    android:padding="5dp"
+                    android:text="Decline"
+                    android:textColor="#E8D7C5"
+                    android:textSize="18sp" />
+                <Button
+                    android:id="@+id/btnagree"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1810dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/shapelogin"
+                    android:gravity="center"
+                    android:text="Agreed"
+                    android:textColor="#E8D7C5"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

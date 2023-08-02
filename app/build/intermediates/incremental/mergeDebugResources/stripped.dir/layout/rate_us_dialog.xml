@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#B9FA8080" />
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-75dp"
+                android:background="@drawable/round_back_while_stroke_1000"
+                android:padding="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_back_white_1000" />
+
+                <ImageView
+                    android:id="@+id/rating_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:padding="25dp"
+                    android:src="@drawable/one_star" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Rate Our App"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="If you are enjoy using our app.Would you mind rate us on the app store"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:rating="1"
+                android:theme="@style/MyRatingBar" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:expandedHintEnabled="true"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/pencil"
+                app:startIconTint="@color/black">
+
+                <EditText
+                    android:id="@+id/et_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:hint="Write your review here"
+                    android:inputType="text"
+                    android:textStyle="bold|normal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/later_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#FA8080"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="May be, later"
+                    android:textAllCaps="false"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ratenow_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#FA8080"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Rate Now"
+                    android:textAllCaps="false"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.foodyghar">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="FoodyGhar"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OnlinedbRegistration"
+        tools:replace="android:label,android:icon,android:theme">
+        <activity
+            android:name=".Payment_successfully_menu"
+            android:exported="false" />
+        <activity
+            android:name=".AboutCallPage"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Appinfo"
+            android:exported="true" />
+        <activity
+            android:name=".TandC"
+            android:exported="false" />
+        <activity
+            android:name=".Faq"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyPhoneNo"
+            android:exported="true" />
+        <activity
+            android:name=".Homepage"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".splashscrn"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Tab_Home_booking2"
+            android:exported="true" />
+        <activity
+            android:name=".Tab_home_tblbook_confirm"
+            android:exported="true" />
+        <activity
+            android:name=".Tab_menu_details"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tab_Menu_AddtoCart"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Confirm_Password"
+            android:exported="true" />
+        <activity
+            android:name=".forget_password"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".Registration"
+            android:exported="true" />
+        <activity android:name=".Order_Details" />
+        <activity
+            android:name=".Payment_successfully"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>

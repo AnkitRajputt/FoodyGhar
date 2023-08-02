@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Homepage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.Toolbar"
+        app:theme="@style/AppTheme.Toolbar"
+        app:titleTextColor="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:SpinKit_Color="@color/colorAccent" />
+    </FrameLayout>
+    <!--#FFCAB8-->
+
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        app:mbn_backgroundBottomColor="#DAD8D4"
+        app:mbn_circleColor="#805252"
+        app:mbn_countBackgroundColor="#EFBC94"
+        app:mbn_countTextColor="@color/white"
+        app:mbn_defaultIconColor="#684B4B"
+        app:mbn_selectedIconColor="#FFFFFF" />
+
+</LinearLayout>

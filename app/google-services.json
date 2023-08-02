@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1072808604550",
+    "project_id": "foodyghar-86a86",
+    "storage_bucket": "foodyghar-86a86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072808604550:android:70f4a40b4fe749dc8d3207",
+        "android_client_info": {
+          "package_name": "com.example.foodyghar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072808604550-2ge4qvud7hhg2vqmi473us39s9krofe9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodyghar",
+            "certificate_hash": "1b5fa5cf5fdb300367d7af28159e47d143281ce4"
+          }
+        },
+        {
+          "client_id": "1072808604550-1efkrct0rscqs921mlel8pmldohl8hk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJqmFeCITqB6H1XShPiyRaLyAuuYwZ5do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072808604550-1efkrct0rscqs921mlel8pmldohl8hk3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

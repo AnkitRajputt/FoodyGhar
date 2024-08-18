@@ -1,2 +1,2 @@
 # FoodyGhar
-we put some project
+Restaurant based project
